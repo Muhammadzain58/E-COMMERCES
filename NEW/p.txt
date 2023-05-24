@@ -1,0 +1,2 @@
+background: linear-gradient(to top left, #cc00ff 0%,#66ff66 100%);
+0 0 20px 0px rgba(0,0,0,0.1);

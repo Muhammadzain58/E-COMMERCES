@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="=utf-8">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<meta name="viewport" content="height-device-height,initial-scale=1.0">
+<title>All Products Red Store</title>
+<link rel="stylesheet" href="style.css">
+<link rel="link rel="preconnect href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="url('https://fonts.googleapis.com/css?family=Lato:400,700');">
+</head>
+<body style="background-color:var(--secondary-color);">
+
+
+    <div class="header">
+        <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="logo.png" width="125px">
+                    </div>
+                   <nav>
+                   <ul id="MenuItems">
+                       <li><a href="">Home</a></li>
+                       <li><a href="">Products</a></li>
+                       <li><a href="">About</a></li>
+                       <li><a href="">Contact</a></li>
+                       <li><a href="">Account</a></li>
+                   </ul>
+                   
+                   </nav>
+                   <i class="fa fa-shopping-bag"></i>
+                   <i class="fa fa-bars" aria-hidden="true"width="25px" height="20px" style="color: var(--secondary-color);;" class="fa-bars" onclick="menutoggle() "></i> 
+                   <img class="ps" src="moon.png" id="icon">
+                  
+              
+                </div>
+        </div>
+    
+    
+
+<!------------------cart items detail ----------->
+<div class="small-container cart-page" style="color: var(--secondary-color);">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+            <div class="cart-info">
+                <img src="buy-1.jpg">
+                <div>
+                    <p>Printed T-Shirt</p>
+                    <small>Price $50.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+
+        </tr>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+            <div class="cart-info">
+                <img src="buy-2.jpg">
+                <div>
+                    <p>Printed T-Shirt</p>
+                    <small>Price $75.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+
+        </tr>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+            <div class="cart-info">
+                <img src="buy-3.jpg">
+                <div>
+                    <p>Printed T-Shirt</p>
+                    <small>Price $75.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+
+        </tr>
+    </table>
+     <div class="total-price">
+         <table >
+             <tr>
+                 <td>Subtotal</td>
+                 <td>$200.00</td>
+             </tr>
+             <tr>
+                <td>Tax</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$230.00</td>
+                
+            </tr>
+            
+         </table >
+
+        </div>
+         <div style="text-align: right;" class="col-0">
+        <di class="s btn">PAYMENT
+        </div>
+    </div>
+</div>
+
+    
+
+<!---------Footer--------->
+<div class="Footer" >
+    <div class="container">
+        <div class="row">
+            <div class="Footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App For Android and Ios Phone</p>
+                <div class="app-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="Footer-col-2">
+                <img src="logo-white.png">
+                <p> Pupose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            
+            <div class="Footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+<li>Blog Post</li>
+<li>Return Policy</li>
+<li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="Footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+<li>Youtube</li>
+<li>Instagram</li>
+<li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2022</p>
+    </div>
+</div>
+    
+<!----------js for toggle menu------------>
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if(MenuItems.style.maxHeight =="0px")  
+    {
+        MenuItems.style.maxHeight ="200px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight ="0px";
+    }
+  }
+</script>
+
+<script>
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src ="sun.png";
+    }else{
+        icon.src ="moon.png";
+    }
+        
+    
+}
+
+</script>
+
+
+</body>
+</html>
